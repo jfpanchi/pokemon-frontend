@@ -9,7 +9,7 @@ import { BuscarPage } from '../pages';
 
 export const PokemonesRoutes = () => {
   const dispatch = useDispatch();
-    const { pokemones = [] } = useSelector( state => state.pokemones ); //Pokemones 
+    const { isLoading, pokemones } = useSelector( state => state.pokemones ); //Pokemones 
     useEffect(() => {
       dispatch( getPokemones());    
     }, [])
@@ -18,7 +18,7 @@ export const PokemonesRoutes = () => {
         <Navbar></Navbar>
         <div className="container">
             <Routes>
-                <Route path="pokemones" element={<PokemonPage pokemones={pokemones} />} /> {/* lista de pokemones compartidos en props */}
+                <Route path="pokemones" element={<PokemonPage pokemones={pokemones} isLoading={isLoading} />} /> {/* lista de pokemones compartidos en props */}
                 <Route path="pokemon/:id" element={<PokemonDetallePage pokemones={pokemones}/>} />
                 <Route path="buscar" element={<BuscarPage pokemones={pokemones}/> } />
                 <Route path="/*" element={<Navigate to="/pokemones" />} />

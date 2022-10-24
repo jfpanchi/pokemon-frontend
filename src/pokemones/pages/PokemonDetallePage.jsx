@@ -29,12 +29,12 @@ export const PokemonDetallePage = (props) => {
         <ul className="list-group list-group-flush">
           <li className="list-group-item"> <b>Descripción:</b> {pokemon.descripcion} </li>
           <li className="list-group-item"> <b>Tipo:</b> {pokemon.tipo} </li>
-          <li className="list-group-item"> <b>Altura:</b> {pokemon.altura} </li>
-          <li className="list-group-item"> <b>Peso:</b> {pokemon.peso} </li>
+          <li className="list-group-item"> <b>Altura:</b> {pokemon.altura} metros</li>
+          <li className="list-group-item"> <b>Peso:</b> {pokemon.peso} kilogramos </li>
         </ul>
-        <h5 className="mt-3"> Evolución </h5>
-        { pokemon.evolucion.map(evolucion => (
-          <p>{evolucion.nombre}</p>
+        <h5 className="mt-3"> Evoluciones </h5>
+        { pokemon.evolucion.map((evolucion, index) => (
+          <p key={index}>{evolucion.nombre}</p>
         )) }
 
         <button 
