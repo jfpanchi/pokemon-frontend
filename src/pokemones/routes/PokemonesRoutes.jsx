@@ -5,6 +5,7 @@ import { Navbar } from '../../ui/components';
 import { PokemonPage } from '../pages';
 import { PokemonDetallePage } from '../pages';
 import { getPokemones } from '../helpers';
+import { BuscarPage } from '../pages';
 
 export const PokemonesRoutes = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ export const PokemonesRoutes = () => {
             <Routes>
                 <Route path="pokemones" element={<PokemonPage pokemones={pokemones} />} /> {/* lista de pokemones compartidos en props */}
                 <Route path="pokemon/:id" element={<PokemonDetallePage pokemones={pokemones}/>} />
+                <Route path="buscar" element={<BuscarPage pokemones={pokemones}/> } />
                 <Route path="/*" element={<Navigate to="/pokemones" />} />
             </Routes>
         </div>
