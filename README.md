@@ -7,7 +7,7 @@ Instalación
 Ejecutar el comando:
 
 ```ruby
-npm run i 
+npm i 
 ```
 
 Ejecución
