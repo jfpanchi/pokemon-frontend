@@ -7,7 +7,7 @@ Instalación
 Ejecutar el comando:
 
 ```ruby
-npm run build
+npm run i 
 ```
 
 Ejecución
@@ -20,11 +20,23 @@ VITE_API_URL=https://localhost:4000/api
 ```
 Producción
 -----
-[MISSING-API](https://jfpanchi2.github.io/pokemon-frontend/)
+
+Para crear el build ejecutar el comando:
+```ruby
+npm run build
+```
+Despliegue
+-----
+
+[POKEMON-API-GITHUB](https://jfpanchi2.github.io/pokemon-frontend/)
 
 Enlace: <https://jfpanchi2.github.io/pokemon-frontend/>
 
-*Nota: Para subir la version a producción en Github Pages se debe actualizar el archivo index.html de nuestra version de build para que encunetren los enlaces:
+[POKEMON-API-NETLIFY](https://pokeapichallenge.netlify.app/)
+
+Enlace: <https://pokeapichallenge.netlify.app/>
+
+*Nota: Para subir la version a producción en Github Pages se debe actualizar el archivo index.html de nuestra version de build para que encuetre los enlaces:
 
 ```ruby
 <script type="module" crossorigin src="./assets/index.xxxxxxx.js"></script>

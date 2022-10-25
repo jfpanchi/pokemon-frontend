@@ -18,10 +18,10 @@ export const PokemonesRoutes = () => {
         <Navbar></Navbar>
         <div className="container">
             <Routes>
-                <Route path="pokemones" element={<PokemonPage pokemones={pokemones} isLoading={isLoading} />} /> {/* lista de pokemones compartidos en props */}
+                <Route path="/" element={<PokemonPage pokemones={pokemones} isLoading={isLoading} />} /> {/* lista de pokemones compartidos en props */}
                 <Route path="pokemon/:id" element={<PokemonDetallePage pokemones={pokemones}/>} />
                 <Route path="buscar" element={<BuscarPage pokemones={pokemones}/> } />
-                <Route path="/*" element={<Navigate to="/pokemones" />} />
+                <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
         </div>
 
