@@ -25,22 +25,14 @@ Para crear el build ejecutar el comando:
 ```ruby
 npm run build
 ```
+
 Despliegue
 -----
-
-[POKEMON-API-GITHUB](https://jfpanchi2.github.io/pokemon-frontend/)
-
-Enlace: <https://jfpanchi2.github.io/pokemon-frontend/>
 
 [POKEMON-API-NETLIFY](https://pokeapichallenge.netlify.app/)
 
 Enlace: <https://pokeapichallenge.netlify.app/>
 
-*Nota: Para subir la version a producción en Github Pages se debe actualizar el archivo index.html de nuestra version de build para que encuetre los enlaces:
-
-```ruby
-<script type="module" crossorigin src="./assets/index.xxxxxxx.js"></script>
-```
 Proceso de Desarrollo
 -----
 [Crear Apliacion React Preconfigurada](https://github.com/jfpanchi2/pokemon-frontend/tree/4179ddb296baca1d918c52e7d0bb40c69b7cbc51)
